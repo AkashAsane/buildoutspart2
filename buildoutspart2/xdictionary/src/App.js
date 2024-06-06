@@ -9,9 +9,9 @@ function App() {
     { word: "State", meaning: "An object that stores data for a component." }
   ]);
 
+  
   const [searchTerm, setSearchTerm] = useState('');
   const [definition, setDefinition] = useState('');
-
 
   const handleSearch = () => {
     const foundWord = dictionary.find(entry => entry.word.toLowerCase() === searchTerm.toLowerCase());
@@ -24,16 +24,20 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Dictionary App</h1>
+      <h1>XDictionary</h1>
       <div>
         <input
+          id="search-input"
           type='text'
           placeholder='Search for a word...'
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />
-        <button onClick={handleSearch}>Search</button>
-        <p>Definition: {definition}</p>
+        <button id="search-button" onClick={handleSearch}>Search</button>
+      </div>
+      <div>
+        <p>Definition:</p>
+        <p id="definition">{definition}</p>
       </div>
     </div>
   );
