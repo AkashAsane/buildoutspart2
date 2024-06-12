@@ -1,0 +1,50 @@
+.modal-content form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 450px;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: rgba(239, 239, 239, 0.85);
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+
+
+.modal{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.view input{
+    width: 350px;
+    text-align: center;
+}
+
+.view label{
+    font-weight: 700px;
+    color: black;
+    
+}
+
+.submit-button{
+    height: 40px;
+    width: 80px;
+    border-radius: 10px;
+    border: 0px;
+    background-color: darkcyan;
+    color: white;
+    cursor: pointer;
+}
