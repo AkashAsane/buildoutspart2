@@ -50,7 +50,7 @@ export default function Modalform({ setOpenModal }) {
         <form onSubmit={handlesubmit} className="view">
           <h1 className="title">Fill Details</h1>
           <label>Username:</label>
-          <input id="Username" type="text"  value={Username} onChange={(e)=>setUsername(e.target.value)} required/>
+          <input id="username" type="text"  value={Username} onChange={(e)=>setUsername(e.target.value)} required/>
           <label>Email Address:</label>
           <input id="email" type="email" value={email}  onChange={(e)=>setEmail(e.target.value)} required/>
           <label>Phone Number:</label>
